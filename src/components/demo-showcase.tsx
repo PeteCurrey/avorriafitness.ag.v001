@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "./fade-in";
 
@@ -27,18 +28,19 @@ export function DemoShowcase() {
         <FadeIn delay={0.6} direction="up" className="max-w-5xl mx-auto relative mt-12">
           {/* Flat Device Mockup */}
           <div className="relative pt-[56.25%] bg-brand-panel border border-white/10 rounded-t-xl overflow-hidden shadow-2xl">
-            <div className="absolute top-0 left-0 w-full h-8 bg-black/50 flex items-center px-4 gap-2">
+            <div className="absolute top-0 left-0 w-full h-8 bg-black/50 flex items-center px-4 gap-2 z-10">
               <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
               <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
               <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
               <div className="mx-auto bg-white/10 h-4 w-1/3 rounded-sm" />
             </div>
-            <div className="absolute top-8 left-0 w-full h-[calc(100%-2rem)] bg-brand-dark p-8 flex flex-col gap-4">
-              <div className="w-full h-1/2 bg-white/5 rounded-sm" />
-              <div className="flex gap-4 h-1/2">
-                <div className="w-1/3 h-full bg-white/5 rounded-sm" />
-                <div className="w-2/3 h-full bg-white/5 rounded-sm" />
-              </div>
+            <div className="absolute top-8 left-0 w-full h-[calc(100%-2rem)] bg-brand-dark overflow-hidden">
+              <Image 
+                src="/images/demo_showcase.png"
+                alt="Forge Fitness Demo Website"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </FadeIn>
