@@ -13,8 +13,8 @@ export async function POST(req: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'Avorria Fitness <onboarding@resend.dev>', // Usually replace with verified domain like no-reply@avorria.com in production
-      to: 'petecurrey69@gmail.com',
+      from: 'Avorria Fitness <hello@avorria.com>',
+      to: 'hello@avorria.com',
       subject: `New Enquiry from ${gymName || name} - Avorria Fitness`,
       html: `
         <h2>New Contact Form Submission</h2>
