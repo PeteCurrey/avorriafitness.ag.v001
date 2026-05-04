@@ -15,11 +15,11 @@ export function Footer() {
           </div>
           
           <nav className="flex gap-6 text-sm font-medium">
-            <Link href="#features" className="hover:text-white transition-colors">Features</Link>
-            <Link href="#packages" className="hover:text-white transition-colors">Packages</Link>
-            <Link href="#demo" className="hover:text-white transition-colors">Demo</Link>
-            <Link href="#about" className="hover:text-white transition-colors">About</Link>
-            <Link href="#contact" className="hover:text-white transition-colors">Contact</Link>
+            <Link href="/#features" className="hover:text-white transition-colors">Features</Link>
+            <Link href="/#packages" className="hover:text-white transition-colors">Packages</Link>
+            <Link href="/#demo" className="hover:text-white transition-colors">Demo</Link>
+            <Link href="/#about" className="hover:text-white transition-colors">About</Link>
+            <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
           </nav>
 
           <div className="flex gap-4">

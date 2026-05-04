@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { FadeIn } from "./fade-in";
 
 export function FooterCta() {
@@ -17,9 +18,11 @@ export function FooterCta() {
           </p>
         </FadeIn>
         <FadeIn delay={0.4}>
-          <Button size="lg" className="bg-brand-accent text-white hover:bg-brand-accent/90 text-lg px-10 py-8 rounded-sm font-bold tracking-wide">
-            Book Your Call
-          </Button>
+          <Link href="/contact">
+            <Button size="lg" className="bg-brand-accent text-white hover:bg-brand-accent/90 text-lg px-10 py-8 rounded-sm font-bold tracking-wide">
+              Book Your Call
+            </Button>
+          </Link>
         </FadeIn>
       </div>
     </section>

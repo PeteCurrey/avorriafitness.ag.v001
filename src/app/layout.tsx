@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, DM_Sans } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -14,6 +15,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://fitness.avorria.com"),
   title: "Avorria Fitness | Fully Loaded Digital Platforms",
   description: "Complete digital platforms for independent gyms and fitness studios. Website, class booking, member portal, and management system.",
 };
@@ -28,7 +30,10 @@ export default function RootLayout({
       lang="en"
       className={`${bebasNeue.variable} ${dmSans.variable} h-full antialiased smooth-scroll`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-background text-foreground">{children}</body>
+      <body className="min-h-full flex flex-col font-sans bg-background text-foreground">
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }

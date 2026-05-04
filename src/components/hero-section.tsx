@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { FadeIn } from "./fade-in";
 
 export function HeroSection() {
@@ -22,12 +23,16 @@ export function HeroSection() {
         </FadeIn>
 
         <FadeIn delay={0.5} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button size="lg" className="bg-brand-accent text-white hover:bg-brand-accent/90 w-full sm:w-auto text-lg px-8 py-6 rounded-sm">
-            See the Demo
-          </Button>
-          <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:text-white w-full sm:w-auto text-lg px-8 py-6 rounded-sm bg-transparent">
-            View Packages
-          </Button>
+          <Link href="/#demo" className="w-full sm:w-auto">
+            <Button size="lg" className="bg-brand-accent text-white hover:bg-brand-accent/90 w-full text-lg px-8 py-6 rounded-sm">
+              See the Demo
+            </Button>
+          </Link>
+          <Link href="/#packages" className="w-full sm:w-auto">
+            <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:text-white w-full text-lg px-8 py-6 rounded-sm bg-transparent">
+              View Packages
+            </Button>
+          </Link>
         </FadeIn>
       </div>
     </section>

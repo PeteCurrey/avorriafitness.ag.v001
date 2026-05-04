@@ -13,15 +13,17 @@ export function Navbar() {
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <Link href="#features" className="hover:text-brand-accent transition-colors">Features</Link>
-          <Link href="#packages" className="hover:text-brand-accent transition-colors">Packages</Link>
-          <Link href="#demo" className="hover:text-brand-accent transition-colors">Demo</Link>
-          <Link href="#about" className="hover:text-brand-accent transition-colors">About</Link>
-          <Link href="#contact" className="hover:text-brand-accent transition-colors">Contact</Link>
+          <Link href="/#features" className="hover:text-brand-accent transition-colors">Features</Link>
+          <Link href="/#packages" className="hover:text-brand-accent transition-colors">Packages</Link>
+          <Link href="/#demo" className="hover:text-brand-accent transition-colors">Demo</Link>
+          <Link href="/#about" className="hover:text-brand-accent transition-colors">About</Link>
+          <Link href="/contact" className="hover:text-brand-accent transition-colors">Contact</Link>
         </nav>
-        <Button className="bg-brand-accent text-white hover:bg-brand-accent/90 font-medium rounded-sm">
-          Book a Discovery Call
-        </Button>
+        <Link href="/contact">
+          <Button className="bg-brand-accent text-white hover:bg-brand-accent/90 font-medium rounded-sm">
+            Book a Discovery Call
+          </Button>
+        </Link>
       </div>
     </header>
   );
