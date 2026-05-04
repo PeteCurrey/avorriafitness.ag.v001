@@ -16,8 +16,35 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://fitness.avorria.com"),
-  title: "Avorria Fitness | Fully Loaded Digital Platforms",
+  title: {
+    default: "Avorria Fitness | Fully Loaded Digital Platforms",
+    template: "%s | Avorria Fitness",
+  },
   description: "Complete digital platforms for independent gyms and fitness studios. Website, class booking, member portal, and management system.",
+  openGraph: {
+    title: "Avorria Fitness | Fully Loaded Digital Platforms",
+    description: "Complete digital platforms for independent gyms and fitness studios. Website, class booking, member portal, and management system.",
+    url: "https://fitness.avorria.com",
+    siteName: "Avorria Fitness",
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Avorria Fitness | Fully Loaded Digital Platforms",
+    description: "Complete digital platforms for independent gyms and fitness studios. Website, class booking, member portal, and management system.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
